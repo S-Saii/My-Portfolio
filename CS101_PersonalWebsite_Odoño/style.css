@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 40px;
+    text-align: center;
+    
+    background-image: url('images/clouds.gif'); /* 1. Sets the GIF as the background */
+    background-repeat: repeat;                     /* 2. Makes the GIF tile across the screen */
+    background-attachment: fixed;                  /* Optional: Makes the background stay put when you scroll */
+}
+
+h1 {
+    color: #007bff; /* Blue heading color */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+nav a {
+    margin-right: 15px; /* Space between links */
+    text-decoration: none; /* Removes the underline from links */
+    color: #28a745; /* Green link color */
+}
