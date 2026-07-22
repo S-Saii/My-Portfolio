@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← BACK"
+        android:backgroundTint="#333333"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp" />
+
+    <com.example.maskstudio.MaskCanvasView
+        android:id="@+id/maskCanvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/paletteLayout"
+        android:layout_below="@id/btnBack" />
+
+    <LinearLayout
+        android:id="@+id/paletteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <View
+                android:id="@+id/colorRed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#FF0000"
+                android:layout_marginEnd="12dp" />
+
+            <View
+                android:id="@+id/colorBlue"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#0000FF"
+                android:layout_marginEnd="12dp" />
+
+            <View
+                android:id="@+id/colorYellow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#FFFF00"
+                android:layout_marginEnd="12dp" />
+
+            <View
+                android:id="@+id/colorGreen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#00FF00" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnProceedCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="PROCEED TO CHECKOUT"
+            android:backgroundTint="#BB86FC"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
